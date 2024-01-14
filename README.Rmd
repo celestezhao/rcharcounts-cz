@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# rcharcounts.cz
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of rcharcounts.cz is to calculate the number of characters in a text file in R.
+
+## Installation
+
+You can install the development version of rcharcounts.cz from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("celestezhao/rcharcounts-cz")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(rcharcounts.cz)
+## basic example code
+char_count("Today is a sunny day!") # Returns 21
+char_count(c("Today", "sunny")) # Returns c(5, 5)
+```
