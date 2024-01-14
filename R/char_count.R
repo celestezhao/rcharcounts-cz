@@ -10,8 +10,9 @@
 #' @export
 #'
 #' @examples
-#' charcount("Today is a sunny day!") # Returns 21
-#' charcount(c("Today", "sunny")) # Returns c(5, 5)
-charcount <- function(text) {
-  nchar(text)
+#' char_count("Today is a sunny day!") # Returns 21
+#' char_count(c("Today", "sunny")) # Returns c(5, 5)
+char_count <- function(text) {
+  stopifnot(is.character(text))
+  stringr::str_length(text)
 }
